@@ -1,6 +1,6 @@
 package crawler
 
-import "github.com/rocboss/paopao-ce/internal/model"
+import "github.com/scshark/Hato/internal/model"
 
 type Platform struct {
 	Jinse      Jinse

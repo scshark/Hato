@@ -1,6 +1,6 @@
 package rest
 
-import "github.com/rocboss/paopao-ce/internal/model"
+import "github.com/scshark/Hato/internal/model"
 
 type IndexTweetsResp struct {
 	Tweets []*model.PostFormated

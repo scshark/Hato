@@ -6,10 +6,10 @@ package jinzhu
 
 import (
 	"github.com/Masterminds/semver/v3"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/dao/cache"
-	"github.com/rocboss/paopao-ce/internal/dao/security"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/dao/cache"
+	"github.com/scshark/Hato/internal/dao/security"
 	"github.com/sirupsen/logrus"
 )
 

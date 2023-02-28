@@ -4,7 +4,7 @@
 package slonik
 
 import (
-	"github.com/rocboss/paopao-ce/internal/core"
+	"github.com/scshark/Hato/internal/core"
 	"github.com/sirupsen/logrus"
 )
 

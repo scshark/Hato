@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/core"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/core"
 )
 
 type attachmentCheckServant struct {

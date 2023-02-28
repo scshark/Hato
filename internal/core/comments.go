@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/model"
 )
 
 // CommentService 评论检索服务

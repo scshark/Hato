@@ -1,9 +1,9 @@
 package internal
 
 import (
-	"github.com/rocboss/paopao-ce/internal/migration"
-	"github.com/rocboss/paopao-ce/internal/routers/api"
-	"github.com/rocboss/paopao-ce/internal/service"
+	"github.com/scshark/Hato/internal/migration"
+	"github.com/scshark/Hato/internal/routers/api"
+	"github.com/scshark/Hato/internal/service"
 )
 
 func Initialize() {

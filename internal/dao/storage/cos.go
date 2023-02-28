@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/core"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/core"
 	"github.com/sirupsen/logrus"
 	"github.com/tencentyun/cos-go-sdk-v5"
 )

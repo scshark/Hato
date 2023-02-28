@@ -9,7 +9,7 @@ package crawler
 import (
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/model"
 	"gorm.io/gorm"
 )
 

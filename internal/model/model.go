@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"github.com/rocboss/paopao-ce/pkg/types"
+	"github.com/scshark/Hato/pkg/types"
 	"gorm.io/gorm"
 	"gorm.io/plugin/soft_delete"
 )

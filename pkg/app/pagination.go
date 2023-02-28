@@ -2,8 +2,8 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/pkg/convert"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/pkg/convert"
 )
 
 func GetPage(c *gin.Context) int {

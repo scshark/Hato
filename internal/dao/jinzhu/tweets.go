@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/model"
 	"gorm.io/gorm"
 )
 

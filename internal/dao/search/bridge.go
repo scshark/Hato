@@ -1,8 +1,8 @@
 package search
 
 import (
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/model"
 	"github.com/sirupsen/logrus"
 )
 

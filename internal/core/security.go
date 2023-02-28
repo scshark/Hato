@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/model"
 )
 
 // SecurityService 安全相关服务

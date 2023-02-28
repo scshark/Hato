@@ -1,6 +1,6 @@
 package core
 
-import "github.com/rocboss/paopao-ce/internal/model"
+import "github.com/scshark/Hato/internal/model"
 
 const (
 	IdxActNop IdxAct = iota + 1

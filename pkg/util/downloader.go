@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
+	"github.com/scshark/Hato/internal/conf"
 
 	"github.com/sirupsen/logrus"
 )

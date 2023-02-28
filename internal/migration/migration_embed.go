@@ -13,8 +13,8 @@ import (
 	"github.com/golang-migrate/migrate/v4/database/sqlite3"
 	"github.com/golang-migrate/migrate/v4/source"
 	"github.com/golang-migrate/migrate/v4/source/iofs"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/scripts/migration"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/scripts/migration"
 	"github.com/sirupsen/logrus"
 )
 

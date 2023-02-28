@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/web"
+	"github.com/scshark/Hato/web"
 )
 
 // registerStatick register static assets route

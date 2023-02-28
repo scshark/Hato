@@ -9,11 +9,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gofrs/uuid"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/convert"
-	"github.com/rocboss/paopao-ce/pkg/errcode"
-	"github.com/rocboss/paopao-ce/pkg/util"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/convert"
+	"github.com/scshark/Hato/pkg/errcode"
+	"github.com/scshark/Hato/pkg/util"
 	"github.com/sirupsen/logrus"
 )
 

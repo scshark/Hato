@@ -9,11 +9,11 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/internal"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/routers"
-	"github.com/rocboss/paopao-ce/pkg/debug"
-	"github.com/rocboss/paopao-ce/pkg/util"
+	"github.com/scshark/Hato/internal"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/routers"
+	"github.com/scshark/Hato/pkg/debug"
+	"github.com/scshark/Hato/pkg/util"
 )
 
 var (

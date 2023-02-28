@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rocboss/paopao-ce/pkg/json"
+	"github.com/scshark/Hato/pkg/json"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/resty.v1"
 )

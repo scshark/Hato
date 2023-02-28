@@ -1,4 +1,4 @@
-module github.com/rocboss/paopao-ce
+module github.com/scshark/Hato
 
 go 1.16
 
@@ -28,12 +28,12 @@ require (
 	github.com/minio/minio-go/v7 v7.0.27
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mozillazg/go-httpheader v0.3.1 // indirect
-	github.com/robfig/cron v1.2.0 // indirect
+	github.com/robfig/cron v1.2.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/smartwalle/alipay/v3 v3.1.7
 	github.com/spf13/viper v1.10.1
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.35
-	github.com/tidwall/gjson v1.14.4 // indirect
+	github.com/tidwall/gjson v1.14.4
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/ugorji/go v1.2.7 // indirect
 	github.com/yinheli/mahonia v0.0.0-20131226213531-0eef680515cc

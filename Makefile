@@ -21,7 +21,7 @@ BUILD_DATE := $(shell date +'%Y-%m-%d %H:%M:%S')
 SHA_SHORT := $(shell git rev-parse --short HEAD)
 
 TAGS = ""
-MOD_NAME = github.com/rocboss/paopao-ce
+MOD_NAME = github.com/scshark/Hato
 LDFLAGS = -X "${MOD_NAME}/pkg/debug.version=${BUILD_VERSION}" \
           -X "${MOD_NAME}/pkg/debug.buildDate=${BUILD_DATE}" \
 		  -X "${MOD_NAME}/pkg/debug.commitID=${SHA_SHORT}" -w -s

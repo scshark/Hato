@@ -9,8 +9,8 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/pkg/json"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/pkg/json"
 )
 
 type ZincClient struct {

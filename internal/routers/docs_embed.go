@@ -5,7 +5,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/docs"
+	"github.com/scshark/Hato/docs"
 )
 
 // registerDocs register docs asset route

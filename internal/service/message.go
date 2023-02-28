@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/convert"
-	"github.com/rocboss/paopao-ce/pkg/errcode"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/convert"
+	"github.com/scshark/Hato/pkg/errcode"
 )
 
 // MAX_WHISPER_NUM_DAILY 当日单用户私信总数限制（TODO 配置化、积分兑换等）

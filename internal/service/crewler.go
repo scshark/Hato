@@ -20,14 +20,14 @@ import (
 
 	"github.com/tidwall/gjson"
 
-	"github.com/rocboss/paopao-ce/pkg/util"
+	"github.com/scshark/Hato/pkg/util"
 
 	"gorm.io/gorm"
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/model"
 )
 
 type Platform struct {

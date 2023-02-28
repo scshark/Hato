@@ -10,9 +10,9 @@ import (
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/allegro/bigcache/v3"
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/internal/model/rest"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/internal/model/rest"
 	"github.com/sirupsen/logrus"
 )
 

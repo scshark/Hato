@@ -2,11 +2,11 @@ package search
 
 import (
 	"github.com/Masterminds/semver/v3"
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/json"
-	"github.com/rocboss/paopao-ce/pkg/types"
-	"github.com/rocboss/paopao-ce/pkg/zinc"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/json"
+	"github.com/scshark/Hato/pkg/types"
+	"github.com/scshark/Hato/pkg/zinc"
 	"github.com/sirupsen/logrus"
 )
 

@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/middleware"
-	"github.com/rocboss/paopao-ce/internal/routers/api"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/middleware"
+	"github.com/scshark/Hato/internal/routers/api"
 	"github.com/sirupsen/logrus"
 )
 

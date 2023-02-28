@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/model"
 )
 
 // UserManageService 用户管理服务

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/fbsobreira/gotron-sdk/pkg/proto/core"
-	"github.com/rocboss/paopao-ce/pkg/crypto"
+	"github.com/scshark/Hato/pkg/crypto"
 	"google.golang.org/protobuf/proto"
 )
 

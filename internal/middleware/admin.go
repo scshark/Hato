@@ -2,9 +2,9 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/app"
-	"github.com/rocboss/paopao-ce/pkg/errcode"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/app"
+	"github.com/scshark/Hato/pkg/errcode"
 )
 
 func Admin() gin.HandlerFunc {

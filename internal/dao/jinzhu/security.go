@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/json"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/json"
 	"gopkg.in/resty.v1"
 	"gorm.io/gorm"
 )

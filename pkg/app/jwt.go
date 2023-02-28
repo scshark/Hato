@@ -6,8 +6,8 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/model"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/model"
 )
 
 type Claims struct {

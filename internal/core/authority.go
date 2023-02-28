@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/pkg/types"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/pkg/types"
 )
 
 const (

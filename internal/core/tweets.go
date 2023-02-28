@@ -1,8 +1,8 @@
 package core
 
 import (
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/internal/model/rest"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/internal/model/rest"
 )
 
 // TweetService 推文检索服务

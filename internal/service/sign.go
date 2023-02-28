@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/pkg/util"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/pkg/util"
 	"github.com/sirupsen/logrus"
 )
 

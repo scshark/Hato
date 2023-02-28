@@ -3,13 +3,13 @@ package dao
 import (
 	"sync"
 
-	"github.com/rocboss/paopao-ce/internal/conf"
-	"github.com/rocboss/paopao-ce/internal/core"
-	"github.com/rocboss/paopao-ce/internal/dao/jinzhu"
-	"github.com/rocboss/paopao-ce/internal/dao/sakila"
-	"github.com/rocboss/paopao-ce/internal/dao/search"
-	"github.com/rocboss/paopao-ce/internal/dao/slonik"
-	"github.com/rocboss/paopao-ce/internal/dao/storage"
+	"github.com/scshark/Hato/internal/conf"
+	"github.com/scshark/Hato/internal/core"
+	"github.com/scshark/Hato/internal/dao/jinzhu"
+	"github.com/scshark/Hato/internal/dao/sakila"
+	"github.com/scshark/Hato/internal/dao/search"
+	"github.com/scshark/Hato/internal/dao/slonik"
+	"github.com/scshark/Hato/internal/dao/storage"
 	"github.com/sirupsen/logrus"
 )
 

@@ -6,11 +6,11 @@ import (
 	"github.com/disintegration/imaging"
 	"github.com/gin-gonic/gin"
 	"github.com/gofrs/uuid"
-	"github.com/rocboss/paopao-ce/internal/model"
-	"github.com/rocboss/paopao-ce/internal/service"
-	"github.com/rocboss/paopao-ce/pkg/app"
-	"github.com/rocboss/paopao-ce/pkg/convert"
-	"github.com/rocboss/paopao-ce/pkg/errcode"
+	"github.com/scshark/Hato/internal/model"
+	"github.com/scshark/Hato/internal/service"
+	"github.com/scshark/Hato/pkg/app"
+	"github.com/scshark/Hato/pkg/convert"
+	"github.com/scshark/Hato/pkg/errcode"
 	"github.com/sirupsen/logrus"
 )
 
