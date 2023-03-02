@@ -1,15 +1,11 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/scshark/Hato">
-    <img src="https://cdn.rocs.me/static/Hato-logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Hato</h3>
+  <h1 align="center">Hato</h1>
 
 
 </div>
@@ -438,3 +434,12 @@ MinIO: # MinIO 存储配置
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-url]: https://github.com/scshark/Hato/graphs/contributors
+[goreport-shield]: https://goreportcard.com/badge/github.com/scshark/Hato
+[goreport-url]: https://goreportcard.com/report/github.com/scshark/Hato
+[forks-url]: https://github.com/scshark/Hato/network/members
+[stars-url]: https://github.com/scshark/Hato/stargazers
+[issues-url]: https://github.com/scshark/Hato/issues
+[license-url]: https://github.com/scshark/Hato/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555

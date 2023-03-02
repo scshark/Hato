@@ -27,7 +27,7 @@ func Initialize() {
 	DisablePhoneVerify = !conf.CfgIf("Sms")
 
 	// TODO init crawler sync data to hato
-	//InitCrawler()
+	InitCrawler()
 }
 
 // persistMediaContents 获取媒体内容并持久化
