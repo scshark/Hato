@@ -1,6 +1,6 @@
 .PHONY: all build run test clean fmt pre-commit help
 
-TARGET = paopao-ce
+TARGET = hato
 ifeq ($(OS),Windows_NT)
 TARGET := $(TARGET).exe
 endif
@@ -30,7 +30,7 @@ all: fmt build
 
 build:
 	@go mod download
-	@echo Build paopao-ce
+	@echo Build hato
 	@go build -trimpath -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $(RELEASE_ROOT)/$(TARGET)
 
 run:
@@ -38,7 +38,7 @@ run:
 
 .PHONY: release
 release: linux-amd64 darwin-amd64 darwin-arm64 windows-x64
-	@echo Package paopao-ce
+	@echo Package hato
 	@cp -rf $(RELEASE_FILES) $(RELEASE_LINUX_AMD64)
 	@cp -rf $(RELEASE_FILES) $(RELEASE_DARWIN_AMD64)
 	@cp -rf $(RELEASE_FILES) $(RELEASE_DARWIN_ARM64)
@@ -50,22 +50,22 @@ release: linux-amd64 darwin-amd64 darwin-arm64 windows-x64
 
 .PHONY: linux-amd64
 linux-amd64:
-	@echo Build paopao-ce [linux-amd64] CGO_ENABLED=$(CGO_ENABLED)
+	@echo Build hato [linux-amd64] CGO_ENABLED=$(CGO_ENABLED)
 	@CGO_ENABLED=$(CGO_ENABLED) GOOS=linux GOARCH=amd64 go build -trimpath -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $(RELEASE_LINUX_AMD64)/$(TARGET)
 
 .PHONY: darwin-amd64
 darwin-amd64:
-	@echo Build paopao-ce [darwin-amd64] CGO_ENABLED=$(CGO_ENABLED)
+	@echo Build hato [darwin-amd64] CGO_ENABLED=$(CGO_ENABLED)
 	@CGO_ENABLED=$(CGO_ENABLED) GOOS=darwin GOARCH=amd64 go build -trimpath  -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $(RELEASE_DARWIN_AMD64)/$(TARGET)
 
 .PHONY: darwin-arm64
 darwin-arm64:
-	@echo Build paopao-ce [darwin-arm64] CGO_ENABLED=$(CGO_ENABLED)
+	@echo Build hato [darwin-arm64] CGO_ENABLED=$(CGO_ENABLED)
 	@CGO_ENABLED=$(CGO_ENABLED) GOOS=darwin GOARCH=arm64 go build -trimpath -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $(RELEASE_DARWIN_ARM64)/$(TARGET)
 
 .PHONY: windows-x64
 windows-x64:
-	@echo Build paopao-ce [windows-x64] CGO_ENABLED=$(CGO_ENABLED)
+	@echo Build hato [windows-x64] CGO_ENABLED=$(CGO_ENABLED)
 	@CGO_ENABLED=$(CGO_ENABLED) GOOS=windows GOARCH=amd64 go build -trimpath  -tags '$(TAGS)' -ldflags '$(LDFLAGS)' -o $(RELEASE_WINDOWS_AMD64)/$(basename $(TARGET)).exe
 
 clean:
