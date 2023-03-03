@@ -75,6 +75,10 @@ func (s *tweetHelpServant) MergePosts(posts []*model.Post) ([]*model.PostFormate
 
 	contentMap := make(map[int64][]*model.PostContentFormated, len(postContents))
 	for _, content := range postContents {
+		// 屏蔽平台链接
+		if userMap[content.UserID].IsPlatform > 0 && content.Type == model.CONTENT_TYPE_LINK {
+			continue
+		}
 		contentMap[content.PostID] = append(contentMap[content.PostID], content.Format())
 	}
 

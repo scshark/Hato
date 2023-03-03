@@ -38,23 +38,25 @@ type User struct {
 }
 
 type UserFormated struct {
-	ID       int64  `json:"id"`
-	Nickname string `json:"nickname"`
-	Username string `json:"username"`
-	Status   int    `json:"status"`
-	Avatar   string `json:"avatar"`
-	IsAdmin  bool   `json:"is_admin"`
+	ID         int64  `json:"id"`
+	Nickname   string `json:"nickname"`
+	Username   string `json:"username"`
+	Status     int    `json:"status"`
+	Avatar     string `json:"avatar"`
+	IsAdmin    bool   `json:"is_admin"`
+	IsPlatform int64  `json:"is_platform"`
 }
 
 func (u *User) Format() *UserFormated {
 	if u.Model != nil {
 		return &UserFormated{
-			ID:       u.ID,
-			Nickname: u.Nickname,
-			Username: u.Username,
-			Status:   u.Status,
-			Avatar:   u.Avatar,
-			IsAdmin:  u.IsAdmin,
+			ID:         u.ID,
+			Nickname:   u.Nickname,
+			Username:   u.Username,
+			Status:     u.Status,
+			Avatar:     u.Avatar,
+			IsAdmin:    u.IsAdmin,
+			IsPlatform: u.IsCrawlerPlatform,
 		}
 	}
 

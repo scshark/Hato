@@ -78,7 +78,7 @@ func (p *Post) Format() *PostFormated {
 			ModifiedOn:      p.ModifiedOn,
 			AttachmentPrice: p.AttachmentPrice,
 			Tags:            tagsMap,
-			IPLoc:           p.IPLoc,
+			//IPLoc:           p.IPLoc,
 		}
 	}
 
