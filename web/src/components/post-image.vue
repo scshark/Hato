@@ -1,7 +1,7 @@
 <template>
     <div class="images-wrap">
         <n-image-group v-if="[1].includes(props.imgs.length)">
-            <n-grid :x-gap="4" :y-gap="4" :cols="2" style="width: 135%">
+            <n-grid :x-gap="4" :y-gap="4" :cols="2" >
                 <template v-for="img in props.imgs" :key="img.id" >
                     <n-gi>
                         <n-image
@@ -252,14 +252,14 @@ const props = withDefaults(defineProps<{
 }
 .x1 {
     /*height: 500px;*/
-    max-height: 520px;
+  height: 520px;
 }
 .x2 {
-  max-height: 255px;
+  height: 255px;
 
 }
 .x3 {
-  max-height: 125px;
+  height: 125px;
 }
 .dark {
     .post-img {

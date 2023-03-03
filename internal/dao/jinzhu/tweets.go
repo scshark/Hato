@@ -85,6 +85,7 @@ func (s *tweetHelpServant) MergePosts(posts []*model.Post) ([]*model.PostFormate
 	// 数据整合
 	postsFormated := make([]*model.PostFormated, 0, len(posts))
 	for _, post := range posts {
+		post.IPLoc = ""
 		postFormated := post.Format()
 		postFormated.User = userMap[post.UserID]
 		postFormated.Contents = contentMap[post.ID]
@@ -119,11 +120,16 @@ func (s *tweetHelpServant) RevampPosts(posts []*model.PostFormated) ([]*model.Po
 
 	contentMap := make(map[int64][]*model.PostContentFormated, len(postContents))
 	for _, content := range postContents {
+		// 屏蔽平台链接
+		if userMap[content.UserID].IsPlatform > 0 && content.Type == model.CONTENT_TYPE_LINK {
+			continue
+		}
 		contentMap[content.PostID] = append(contentMap[content.PostID], content.Format())
 	}
 
 	// 数据整合
 	for _, post := range posts {
+		post.IPLoc = ""
 		post.User = userMap[post.UserID]
 		post.Contents = contentMap[post.ID]
 	}
