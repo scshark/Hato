@@ -510,6 +510,18 @@ func syncTwitter(userNum int, tweetNum int) error {
 			logrus.Errorf("同步推文，获取用户推文失败 用户id%d ， err:%s", u.Model.ID, err)
 			continue
 		}
+		if len(tweet) == 0 {
+			logrus.Infof("同步推文，用户名称 %s , 所有推文都已同步完成，无需更新", u.Username)
+			logrus.Infof("用户名称 %s，开始更新推特用户同步推文时间", u.Username)
+			u.PostUpdatedAt = time.Now().Unix()
+			err = ds.UpdateUser(u)
+			if err != nil {
+				logrus.Infof("用户名称 %s，更新推特用户同步推文时间失败， error %s ", u.Username, err)
+				return err
+			}
+			continue
+
+		}
 		// 推特用户同步推文
 		logrus.Infof("同步推文，用户名称 %s ,获取到推文 %d 条，正在同步", u.Username, len(tweet))
 
