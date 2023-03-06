@@ -825,6 +825,9 @@ func syncPlatform(livesNum int) error {
 			}
 			post, err = ds.CreateCrawlerPost(post, postContent)
 			if err != nil {
+				if post != nil && post.Model != nil {
+					postLivesId = append(postLivesId, d.LiveId)
+				}
 				logrus.Errorf("**** 平台lives信息同步失败，平台名称 %s ，CreateCrawlerPost error : %s", u.Nickname, err)
 				continue
 			}

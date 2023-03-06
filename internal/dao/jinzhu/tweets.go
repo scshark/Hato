@@ -186,7 +186,7 @@ func (s *tweetManageServant) CreateCrawlerPost(post *model.Post, content []*mode
 	if post.TweetId != "" {
 		tw, e := post.Get(s.db)
 		if e == nil && tw.Model != nil && tw.Model.ID > 0 {
-			return nil, errors.New("推文已存在，无需多次同步")
+			return tw, errors.New("推文已存在，无需多次同步")
 		}
 	}
 
