@@ -812,7 +812,8 @@ func syncPlatform(livesNum int) error {
 					if err == nil {
 						content = imageUrl
 					} else {
-						logrus.Errorf("**** 平台lives信息 Image 上传失败，平台名称 %s ，downLoadImageUrlToUploadOss error : %s", u.Nickname, err)
+						//logrus.Errorf("**** 平台lives信息 Image 上传失败，平台名称 %s ，downLoadImageUrlToUploadOss error : %s", u.Nickname, err)
+						continue
 					}
 				}
 				pContent := &model.PostContent{
