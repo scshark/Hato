@@ -528,6 +528,8 @@ func syncTwitter(userNum int, tweetNum int) error {
 		var tweetIds = make([]int64, 0)
 		for k, t := range tweet {
 
+			// 检查推文是否已存在
+
 			// tags == hashtags
 			tweetTags := make([]string, 0)
 			if t.Hashtags != "" {
@@ -650,6 +652,9 @@ func syncTwitter(userNum int, tweetNum int) error {
 			}
 			post, err = ds.CreateCrawlerPost(post, postContent)
 			if err != nil {
+				if post != nil && post.Model != nil {
+					tweetIds = append(tweetIds, t.ID)
+				}
 				logrus.Errorf("**** 推文信息同步失败，用户名称 %s ，推文 id %s ，CreatePost error : %s", u.Username, t.IdStr, err)
 				continue
 			}
@@ -670,39 +675,39 @@ func syncTwitter(userNum int, tweetNum int) error {
 				}
 			}
 
-			if t.UserMentions != "" {
-				userMt := gjson.Parse(t.UserMentions)
-				if userMt.IsArray() {
-					userMt.ForEach(func(key, value gjson.Result) bool {
-						// 创建用户消息提醒
-
-						user, err := ds.GetUserByUsername(value.Get("screen_name").String())
-						if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
-							logrus.Errorf("**** 推文信息UserMentions同步失败，用户名称 %s ，用户 id %d , user screen name is %s ,GetUserByUsername error : %s", u.Username, u.ID, value.Get("screen_name").String(), err)
-							return true
-						}
-
-						if user.Model == nil {
-							logrus.Warnf("推文信息UserMentions @ 的账号不存在")
-							return true
-						}
-						// 创建消息提醒
-						// TODO: 优化消息提醒处理机制
-						go ds.CreateMessage(&model.Message{
-							SenderUserID:   u.ID,
-							ReceiverUserID: user.ID,
-							Type:           model.MsgTypePost,
-							Brief:          "在新发布的Hato动态中@了你",
-							PostID:         post.ID,
-							Model: &model.Model{
-								CreatedOn:  t.TwCreatedAt,
-								ModifiedOn: t.TwCreatedAt,
-							},
-						})
-						return true
-					})
-				}
-			}
+			//if t.UserMentions != "" {
+			//	userMt := gjson.Parse(t.UserMentions)
+			//	if userMt.IsArray() {
+			//		userMt.ForEach(func(key, value gjson.Result) bool {
+			//			// 创建用户消息提醒
+			//
+			//			user, err := ds.GetUserByUsername(value.Get("screen_name").String())
+			//			if err != nil && !errors.Is(err, gorm.ErrRecordNotFound) {
+			//				logrus.Errorf("**** 推文信息UserMentions同步失败，用户名称 %s ，用户 id %d , user screen name is %s ,GetUserByUsername error : %s", u.Username, u.ID, value.Get("screen_name").String(), err)
+			//				return true
+			//			}
+			//
+			//			if user.Model == nil {
+			//				logrus.Warnf("推文信息UserMentions @ 的账号不存在")
+			//				return true
+			//			}
+			//			// 创建消息提醒
+			//			// TODO: 优化消息提醒处理机制
+			//			go ds.CreateMessage(&model.Message{
+			//				SenderUserID:   u.ID,
+			//				ReceiverUserID: user.ID,
+			//				Type:           model.MsgTypePost,
+			//				Brief:          "在新发布的Hato动态中@了你",
+			//				PostID:         post.ID,
+			//				Model: &model.Model{
+			//					CreatedOn:  t.TwCreatedAt,
+			//					ModifiedOn: t.TwCreatedAt,
+			//				},
+			//			})
+			//			return true
+			//		})
+			//	}
+			//}
 
 			// 推送Search
 			PushPostToSearch(post)
