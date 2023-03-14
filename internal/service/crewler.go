@@ -661,6 +661,7 @@ func syncTwitter(userNum int, tweetNum int) error {
 
 			// 创建标签
 			for _, ts := range tags {
+
 				tag := &model.Tag{
 					UserID: u.ID,
 					Tag:    ts,

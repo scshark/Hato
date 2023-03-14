@@ -37,6 +37,17 @@
         </n-card>
         <n-card class="copyright-wrap" embedded :bordered="false" size="small">
             <div class="copyright">&copy; 2023 Hato.scshark</div>
+          <div>
+            <n-space>
+              <a
+                  href="https://beian.miit.gov.cn/"
+                  target="_blank"
+                  class="hash-link"
+              >
+                粤ICP备19136083号-1
+              </a>
+            </n-space>
+          </div>
         </n-card>
     </div>
 </template>
